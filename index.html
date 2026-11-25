@@ -1,0 +1,1409 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九1制品厂_制作传媒资源平台_九1制品厂官方网站视频资源</title>
+<meta name="description" content="九1制品厂官方网站，聚焦制作传媒资源的企业级视频品牌平台，汇聚原创短片、幕后制作、创作者社区与高清正版内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316181c'/%3E%3Cpath d='M18 20h10v24H18z' fill='%23ff6a3d'/%3E%3Cpath d='M34 20l14 12-14 12z' fill='%23f4f4f2'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --c-bg:#0f1013;
+    --c-bg2:#15171c;
+    --c-card:#1b1e25;
+    --c-line:#2b2f39;
+    --c-text:#eceef2;
+    --c-muted:#9aa1af;
+    --c-accent:#ff6a3d;
+    --c-accent2:#ffd166;
+    --c-cool:#4ecdc4;
+    --radius:14px;
+    --maxw:1180px;
+    --sticky-h:104px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+  body{
+    background:var(--c-bg);
+    color:var(--c-text);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  ul{list-style:none}
+  .jz-wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .jz-sticky-head{position:sticky;top:0;z-index:100}
+
+  /* 公告条 */
+  .jz-notice{
+    background:linear-gradient(90deg,#ff6a3d,#ff9a3d 55%,#ffd166);
+    color:#191308;
+    font-size:13.5px;
+    font-weight:600;
+    letter-spacing:.2px;
+  }
+  .jz-notice-inner{
+    max-width:var(--maxw);margin:0 auto;padding:8px 22px;
+    display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  }
+  .jz-notice-tag{
+    background:#191308;color:#ffd166;border-radius:5px;
+    padding:1px 8px;font-size:11.5px;letter-spacing:1px;flex:none;
+  }
+  .jz-notice-list{display:flex;gap:22px;flex-wrap:wrap;overflow:hidden}
+  .jz-notice-list li{white-space:nowrap;opacity:.92}
+  .jz-notice-list li::before{content:"▸ ";opacity:.7}
+
+  /* 页头 */
+  .jz-header{
+    background:rgba(15,16,19,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--c-line);
+  }
+  .jz-header-inner{
+    max-width:var(--maxw);margin:0 auto;padding:0 22px;
+    display:flex;align-items:center;gap:26px;height:72px;
+  }
+  .jz-brand{display:flex;align-items:center;gap:11px;flex:none}
+  .jz-brand-logo{
+    width:42px;height:42px;border-radius:11px;flex:none;
+    background:linear-gradient(140deg,#ff6a3d,#ffd166);
+    display:grid;place-items:center;color:#181208;font-weight:900;font-size:16px;
+    letter-spacing:-.5px;
+  }
+  .jz-brand-name{font-size:17px;font-weight:800;letter-spacing:.5px;line-height:1.2}
+  .jz-brand-sub{font-size:10.5px;color:var(--c-muted);letter-spacing:2.6px}
+
+  .jz-nav{display:flex;gap:4px;margin-left:8px;flex:1;flex-wrap:wrap}
+  .jz-nav a{
+    font-size:14.5px;color:var(--c-muted);padding:7px 12px;border-radius:8px;
+    transition:.2s;white-space:nowrap;
+  }
+  .jz-nav a:hover{color:var(--c-text);background:#21252e}
+
+  .jz-head-tools{display:flex;align-items:center;gap:10px;flex:none}
+  .jz-search{position:relative;display:flex;align-items:center}
+  .jz-search input{
+    width:172px;background:#1b1e25;border:1px solid var(--c-line);border-radius:9px;
+    padding:8px 12px 8px 32px;color:var(--c-text);font-size:13.5px;outline:none;transition:.25s;
+  }
+  .jz-search input:focus{width:214px;border-color:var(--c-accent);background:#20242c}
+  .jz-search svg{position:absolute;left:10px;width:14px;height:14px;stroke:var(--c-muted);fill:none;stroke-width:2}
+  .jz-search-hint{
+    position:absolute;top:44px;right:0;width:262px;background:#1b1e25;border:1px solid var(--c-line);
+    border-radius:10px;padding:9px 12px;font-size:12.8px;color:var(--c-muted);
+    display:none;box-shadow:0 14px 34px rgba(0,0,0,.5);z-index:60;line-height:1.6;
+  }
+  .jz-search-hint.on{display:block}
+  .jz-search-hint b{color:var(--c-accent)}
+  .jz-btn-ghost{
+    border:1px solid var(--c-line);border-radius:9px;padding:8px 15px;font-size:13.5px;
+    color:var(--c-text);transition:.2s;white-space:nowrap;
+  }
+  .jz-btn-ghost:hover{border-color:var(--c-accent);color:var(--c-accent)}
+  .jz-btn-solid{
+    background:var(--c-accent);color:#160d05;font-weight:700;border-radius:9px;
+    padding:9px 17px;font-size:13.5px;transition:.2s;white-space:nowrap;
+  }
+  .jz-btn-solid:hover{background:#ff8459}
+  .jz-burger{display:none;width:40px;height:40px;border:1px solid var(--c-line);border-radius:9px;place-items:center}
+  .jz-burger span{display:block;width:17px;height:2px;background:var(--c-text);position:relative}
+  .jz-burger span::before,.jz-burger span::after{content:"";position:absolute;left:0;width:17px;height:2px;background:var(--c-text)}
+  .jz-burger span::before{top:-5px}
+  .jz-burger span::after{top:5px}
+
+  .jz-mobile-nav{display:none;border-bottom:1px solid var(--c-line);background:#14161b}
+  .jz-mobile-nav.open{display:block}
+  .jz-mobile-nav a{display:block;padding:12px 22px;border-bottom:1px solid #21242b;font-size:14.5px;color:var(--c-muted)}
+  .jz-mobile-nav a:last-child{border-bottom:none}
+
+  /* 首屏 */
+  .jz-hero{
+    position:relative;background:
+      radial-gradient(900px 420px at 82% -10%,rgba(255,106,61,.17),transparent 65%),
+      radial-gradient(700px 380px at 8% 110%,rgba(78,205,196,.10),transparent 70%),
+      var(--c-bg);
+    padding:60px 0 54px;overflow:clip;
+  }
+  .jz-hero-grid{
+    display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr);
+    gap:52px;align-items:center;
+  }
+  .jz-hero-eyebrow{
+    display:inline-flex;align-items:center;gap:9px;font-size:12px;letter-spacing:2.4px;
+    color:var(--c-accent);border:1px solid rgba(255,106,61,.38);border-radius:999px;
+    padding:5px 14px;margin-bottom:22px;background:rgba(255,106,61,.07);
+  }
+  .jz-hero-eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--c-accent);display:block}
+  h1.jz-h1{
+    font-size:clamp(30px,4.4vw,50px);line-height:1.22;font-weight:900;letter-spacing:-.6px;
+    margin-bottom:20px;
+  }
+  h1.jz-h1 em{
+    font-style:normal;color:var(--c-accent);
+    background:linear-gradient(100deg,var(--c-accent),var(--c-accent2));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .jz-hero-lead{font-size:15.5px;color:#c3c9d4;max-width:560px;margin-bottom:22px}
+  .jz-hero-intro{
+    font-size:14.2px;color:var(--c-muted);background:#16181e;border-left:3px solid var(--c-accent);
+    padding:15px 18px;border-radius:0 10px 10px 0;margin-bottom:26px;max-width:600px;
+  }
+  .jz-hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+  .jz-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:600px}
+  .jz-stat{background:#171a20;border:1px solid var(--c-line);border-radius:12px;padding:13px 15px}
+  .jz-stat b{display:block;font-size:22px;font-weight:900;color:var(--c-accent2);letter-spacing:-.5px}
+  .jz-stat span{font-size:11.8px;color:var(--c-muted);letter-spacing:.4px}
+
+  .jz-hero-visual{position:relative}
+  .jz-hero-frame{
+    border-radius:18px;overflow:hidden;border:1px solid #333846;
+    box-shadow:0 30px 70px rgba(0,0,0,.55);
+    aspect-ratio:4/3.1;background:#191c22;
+  }
+  .jz-hero-frame svg{width:100%;height:100%}
+  .jz-hero-play{
+    position:absolute;left:26px;bottom:26px;display:flex;align-items:center;gap:12px;
+    background:rgba(15,16,19,.82);backdrop-filter:blur(8px);border:1px solid #3a3f4c;
+    border-radius:12px;padding:9px 15px 9px 9px;
+  }
+  .jz-hero-play i{
+    width:34px;height:34px;border-radius:50%;background:var(--c-accent);flex:none;display:grid;place-items:center;
+  }
+  .jz-hero-play i::after{content:"";border-left:10px solid #170d05;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+  .jz-hero-play b{font-size:13px;display:block;line-height:1.35}
+  .jz-hero-play small{font-size:11px;color:var(--c-muted)}
+
+  /* 区块通用 */
+  .jz-section{padding:58px 0}
+  .jz-section.alt{background:#121419;border-top:1px solid #1d2027;border-bottom:1px solid #1d2027}
+  .jz-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:32px;flex-wrap:wrap}
+  .jz-sec-title{font-size:clamp(21px,2.5vw,28px);font-weight:800;letter-spacing:-.3px;line-height:1.3}
+  .jz-sec-title small{display:block;font-size:11.5px;letter-spacing:2.6px;color:var(--c-accent);font-weight:600;margin-bottom:7px}
+  .jz-sec-desc{font-size:13.6px;color:var(--c-muted);max-width:520px}
+
+  /* 焦点 + 视频列表 布局：一幅重点大图与文字列表 */
+  .jz-focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:26px;align-items:start}
+  .jz-focus-main{
+    background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--radius);overflow:hidden;
+    transition:.25s;
+  }
+  .jz-focus-main:hover{border-color:#4a4038;transform:translateY(-3px)}
+  .jz-focus-cover{aspect-ratio:16/9;overflow:hidden;background:#20242c}
+  .jz-focus-cover svg{width:100%;height:100%}
+  .jz-focus-body{padding:20px 22px 22px}
+  .jz-chip{
+    display:inline-block;font-size:11.2px;letter-spacing:.6px;padding:3px 9px;border-radius:6px;
+    background:rgba(255,106,61,.14);color:var(--c-accent);margin-bottom:11px;
+  }
+  .jz-focus-body h3{font-size:19.5px;font-weight:800;line-height:1.5;margin-bottom:10px}
+  .jz-focus-body p{font-size:13.8px;color:var(--c-muted);margin-bottom:14px}
+  .jz-meta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.4px;color:var(--c-muted)}
+  .jz-meta-row b{color:#d6dae2;font-weight:600}
+
+  .jz-vlist{display:flex;flex-direction:column;gap:13px;min-width:0}
+  .jz-vitem{
+    display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;align-items:start;
+    background:#181b21;border:1px solid #262a33;border-radius:12px;padding:15px 16px;transition:.22s;
+  }
+  .jz-vitem:hover{border-color:#3d4453;background:#1c2029}
+  .jz-vnum{
+    font-size:15px;font-weight:900;color:#4e5666;letter-spacing:-.5px;padding-top:2px;
+  }
+  .jz-vitem h4{font-size:15px;font-weight:700;line-height:1.5;margin-bottom:6px}
+  .jz-vitem p{font-size:12.8px;color:var(--c-muted);margin-bottom:8px}
+  .jz-vtags{display:flex;gap:7px;flex-wrap:wrap}
+  .jz-vtags span{font-size:11px;color:#8d96a6;background:#20242c;border-radius:5px;padding:2px 7px}
+  .jz-vdata{display:flex;flex-direction:column;align-items:flex-end;gap:7px;font-size:11.8px;color:#7d8595;flex:none}
+  .jz-icon-btn{
+    display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--c-muted);
+    border:1px solid #313742;border-radius:7px;padding:4px 9px;transition:.2s;
+  }
+  .jz-icon-btn:hover{color:var(--c-accent);border-color:var(--c-accent)}
+  .jz-icon-btn.liked{color:var(--c-accent);border-color:rgba(255,106,61,.6);background:rgba(255,106,61,.1)}
+  .jz-icon-btn.saved{color:var(--c-accent2);border-color:rgba(255,209,102,.55);background:rgba(255,209,102,.1)}
+
+  /* 关键词解析 */
+  .jz-parse-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:34px;align-items:start}
+  .jz-parse-grid h3{font-size:16.5px;font-weight:800;margin:22px 0 9px;color:#fff}
+  .jz-parse-grid h3:first-child{margin-top:0}
+  .jz-parse-grid p{font-size:14px;color:#b6bcc8;margin-bottom:12px;text-align:justify}
+  .jz-parse-aside{background:#171a20;border:1px solid var(--c-line);border-radius:var(--radius);padding:22px}
+  .jz-parse-aside h3{font-size:14.5px;margin-bottom:14px;color:var(--c-accent2);letter-spacing:.5px}
+  .jz-parse-aside li{
+    font-size:13.2px;color:#aeb5c2;padding:10px 0;border-bottom:1px dashed #2a2f39;display:flex;gap:10px;
+  }
+  .jz-parse-aside li:last-child{border-bottom:none}
+  .jz-parse-aside li b{color:var(--c-accent);font-size:12.4px;flex:none;font-weight:700}
+
+  /* 专题 */
+  .jz-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .jz-topic{
+    background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--radius);
+    padding:22px;display:flex;flex-direction:column;transition:.24s;
+  }
+  .jz-topic:hover{transform:translateY(-4px);border-color:#4a4038}
+  .jz-topic-cover{aspect-ratio:16/9;border-radius:10px;overflow:hidden;margin-bottom:16px;background:#20242c}
+  .jz-topic-cover svg{width:100%;height:100%}
+  .jz-topic h3{font-size:16.5px;font-weight:800;margin-bottom:8px;line-height:1.5}
+  .jz-topic>p{font-size:13.2px;color:var(--c-muted);margin-bottom:14px;flex:1}
+  .jz-topic-status{font-size:11.5px;color:var(--c-cool);margin-bottom:12px;letter-spacing:.4px}
+  .jz-topic-list{border-top:1px solid #272b34;padding-top:12px;display:flex;flex-direction:column;gap:9px}
+  .jz-topic-list a{font-size:12.8px;color:#a9b0bd;display:flex;gap:8px;transition:.2s}
+  .jz-topic-list a:hover{color:var(--c-accent)}
+  .jz-topic-list a::before{content:"—";color:#4d5563;flex:none}
+
+  /* 作者：双列简介 */
+  .jz-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .jz-author{
+    background:#181b21;border:1px solid #262a33;border-radius:var(--radius);
+    padding:22px;display:flex;gap:17px;transition:.24s;min-width:0;
+  }
+  .jz-author:hover{border-color:#454c5b;background:#1c2029}
+  .jz-avatar{
+    width:58px;height:58px;border-radius:50%;flex:none;display:grid;place-items:center;
+    font-weight:900;font-size:20px;color:#12100b;letter-spacing:-1px;
+  }
+  .jz-author-main{min-width:0;flex:1}
+  .jz-author-main h3{font-size:15.5px;font-weight:800;margin-bottom:3px}
+  .jz-author-field{font-size:11.8px;color:var(--c-accent);margin-bottom:9px;letter-spacing:.5px}
+  .jz-author-main p{font-size:12.8px;color:var(--c-muted);margin-bottom:11px;text-align:justify}
+  .jz-author-nums{display:flex;gap:16px;font-size:11.8px;color:#848d9d;flex-wrap:wrap}
+  .jz-author-nums b{color:#dde1e8;font-weight:700}
+
+  /* 数据榜单 */
+  .jz-boards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:28px}
+  .jz-board{background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--radius);padding:20px}
+  .jz-board h3{font-size:14px;letter-spacing:1px;color:var(--c-accent2);margin-bottom:15px;display:flex;align-items:center;gap:8px}
+  .jz-board h3::before{content:"";width:4px;height:14px;background:var(--c-accent);border-radius:2px;display:block}
+  .jz-board li{display:flex;gap:10px;font-size:13px;padding:9px 0;border-bottom:1px dashed #272b34;color:#b6bcc8}
+  .jz-board li:last-child{border-bottom:none}
+  .jz-board li span{color:#5c6473;font-weight:800;font-size:12px;flex:none;width:16px}
+  .jz-board li b{margin-left:auto;color:#7f8898;font-size:11.5px;font-weight:600;flex:none}
+
+  /* 评论：双列短评 */
+  .jz-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .jz-comment{
+    background:#181b21;border:1px solid #262a33;border-radius:12px;padding:17px 18px;min-width:0;
+  }
+  .jz-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+  .jz-comment-av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;color:#131009;flex:none}
+  .jz-comment-top b{font-size:12.8px}
+  .jz-comment-top small{margin-left:auto;color:#6c7484;font-size:11px}
+  .jz-comment p{font-size:13px;color:#a8b0bd;line-height:1.7}
+  .jz-stars{color:var(--c-accent2);font-size:11.5px;letter-spacing:1.5px}
+  .jz-quote{
+    border-left:2px solid var(--c-accent);padding-left:12px;font-style:normal;
+  }
+
+  /* 动态 + FAQ + 合作 */
+  .jz-duo{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:30px;align-items:start}
+  .jz-news li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #242832;font-size:13.5px}
+  .jz-news li:last-child{border-bottom:none}
+  .jz-news time{color:#6f788a;font-size:12px;flex:none;font-variant-numeric:tabular-nums}
+  .jz-news p{color:#b3bac6}
+  .jz-faq details{border-bottom:1px solid #242832;padding:12px 0}
+  .jz-faq summary{
+    font-size:14px;font-weight:700;cursor:pointer;list-style:none;display:flex;gap:10px;align-items:flex-start;
+    color:#dfe3ea;
+  }
+  .jz-faq summary::-webkit-details-marker{display:none}
+  .jz-faq summary::before{content:"+";color:var(--c-accent);font-weight:800;flex:none;width:14px;font-size:16px;line-height:1.4}
+  .jz-faq details[open] summary::before{content:"−"}
+  .jz-faq p{font-size:13.2px;color:var(--c-muted);padding:9px 0 2px 24px}
+
+  .jz-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .jz-partner{
+    border:1px solid var(--c-line);border-radius:11px;padding:18px 14px;text-align:center;
+    font-size:13px;font-weight:700;color:#9aa3b2;background:#161920;letter-spacing:.4px;transition:.22s;
+  }
+  .jz-partner:hover{color:var(--c-accent);border-color:rgba(255,106,61,.45)}
+  .jz-partner small{display:block;font-size:10.8px;color:#626a7a;font-weight:500;margin-top:4px;letter-spacing:1px}
+
+  /* 投稿条 */
+  .jz-submit{
+    background:linear-gradient(110deg,#1e1a17,#241d18 45%,#1a1922);
+    border:1px solid #3a3129;border-radius:18px;padding:32px;display:flex;
+    align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+  }
+  .jz-submit h2{font-size:clamp(19px,2.3vw,25px);font-weight:800;margin-bottom:8px}
+  .jz-submit p{font-size:13.6px;color:var(--c-muted);max-width:540px}
+
+  /* 页脚 */
+  .jz-footer{background:#0b0c0f;border-top:1px solid #1e2128;padding:50px 0 0}
+  .jz-footer-grid{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));gap:30px;padding-bottom:36px}
+  .jz-footer-brand p{font-size:12.8px;color:#828b9b;margin-top:13px;max-width:330px}
+  .jz-footer h4{font-size:12.5px;letter-spacing:1.6px;color:#cbd1db;margin-bottom:14px}
+  .jz-footer li{font-size:12.6px;color:#7d8595;padding:5px 0;transition:.2s}
+  .jz-footer li:hover{color:var(--c-accent)}
+  .jz-footer-bottom{
+    border-top:1px solid #1c1f26;padding:19px 0 26px;font-size:12px;color:#6a7282;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  }
+
+  /* 回顶部 */
+  .jz-top{
+    position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:50%;
+    background:var(--c-accent);color:#170d05;display:grid;place-items:center;font-weight:900;
+    box-shadow:0 10px 26px rgba(255,106,61,.35);opacity:0;pointer-events:none;transition:.3s;z-index:80;
+  }
+  .jz-top.show{opacity:1;pointer-events:auto}
+  .jz-top:hover{transform:translateY(-3px)}
+
+  /* Toast */
+  .jz-toast{
+    position:fixed;left:50%;bottom:40px;transform:translate(-50%,18px);z-index:300;
+    background:#232830;border:1px solid #3c4453;color:#e7eaf0;font-size:13px;
+    padding:10px 20px;border-radius:10px;opacity:0;pointer-events:none;transition:.3s;
+    box-shadow:0 16px 40px rgba(0,0,0,.5);white-space:nowrap;
+  }
+  .jz-toast.show{opacity:1;transform:translate(-50%,0)}
+
+  /* 弹窗 */
+  .jz-modal{
+    position:fixed;inset:0;z-index:250;background:rgba(6,7,9,.72);backdrop-filter:blur(5px);
+    display:none;place-items:center;padding:22px;
+  }
+  .jz-modal.on{display:grid}
+  .jz-modal-box{
+    background:#191c22;border:1px solid #343a46;border-radius:16px;max-width:480px;width:100%;
+    padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.6);max-height:86vh;overflow:auto;
+  }
+  .jz-modal-box h3{font-size:17px;font-weight:800;margin-bottom:10px}
+  .jz-modal-box p{font-size:13.4px;color:var(--c-muted);margin-bottom:16px}
+  .jz-modal-box label{display:block;font-size:12.6px;color:#a4acba;margin:12px 0 6px}
+  .jz-modal-box input,.jz-modal-box textarea{
+    width:100%;background:#12141a;border:1px solid #2f3541;border-radius:9px;padding:9px 12px;
+    color:var(--c-text);font-size:13.4px;font-family:inherit;outline:none;resize:vertical;
+  }
+  .jz-modal-box input:focus,.jz-modal-box textarea:focus{border-color:var(--c-accent)}
+  .jz-modal-actions{display:flex;gap:11px;justify-content:flex-end;margin-top:20px}
+  .jz-share-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+  .jz-share-list button{
+    border:1px solid #313845;border-radius:10px;padding:14px 8px;font-size:13px;color:#c3cad6;transition:.2s;
+  }
+  .jz-share-list button:hover{border-color:var(--c-accent);color:var(--c-accent)}
+
+  /* 响应式 */
+  @media(max-width:1000px){
+    .jz-hero-grid{grid-template-columns:1fr;gap:34px}
+    .jz-hero-frame{aspect-ratio:16/10}
+    .jz-focus-grid,.jz-parse-grid,.jz-duo{grid-template-columns:1fr;gap:24px}
+    .jz-topics{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .jz-boards{grid-template-columns:1fr}
+    .jz-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .jz-footer-grid{grid-template-columns:1fr 1fr}
+    .jz-nav{display:none}
+    .jz-search input{width:140px}
+    .jz-search input:focus{width:170px}
+  }
+  @media(max-width:720px){
+    :root{--sticky-h:132px}
+    .jz-header-inner{gap:12px;height:64px;flex-wrap:nowrap}
+    .jz-burger{display:grid;margin-left:auto}
+    .jz-head-tools .jz-search,.jz-head-tools .jz-btn-ghost{display:none}
+    .jz-head-tools .jz-btn-solid{padding:8px 12px;font-size:12.5px}
+    .jz-brand-sub{display:none}
+    .jz-notice-list{gap:0;overflow:hidden}
+    .jz-notice-list li:nth-child(n+2){display:none}
+    .jz-notice-inner{font-size:12.4px}
+    .jz-hero{padding:38px 0 40px}
+    .jz-hero-stats{grid-template-columns:1fr 1fr 1fr;gap:9px}
+    .jz-stat{padding:10px}
+    .jz-stat b{font-size:16.5px}
+    .jz-stat span{font-size:10.5px}
+    .jz-authors,.jz-comments,.jz-boards{grid-template-columns:1fr}
+    .jz-topics{grid-template-columns:1fr}
+    .jz-author{flex-direction:row;gap:13px}
+    .jz-vitem{grid-template-columns:30px minmax(0,1fr);}
+    .jz-vdata{grid-column:1/-1;flex-direction:row;justify-content:flex-end;align-items:center}
+    .jz-vnum{font-size:13px}
+    .jz-section{padding:40px 0}
+    .jz-submit{padding:24px;text-align:left}
+    .jz-footer-grid{grid-template-columns:1fr;gap:24px}
+    .jz-search-hint{width:100%;left:0;right:auto}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{transition:none!important;animation:none!important}
+  }
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="jz-sticky-head">
+  <div class="jz-notice">
+    <div class="jz-notice-inner">
+      <span class="jz-notice-tag">官方发布</span>
+      <ul class="jz-notice-list">
+        <li>《棚内灯光布线实录》第四集更新，新增 12 分钟调光案例</li>
+        <li>11 月创作者扶持计划开放报名，上传即参与评审</li>
+        <li>素材库新增 4K 转场包 36 组，正版可商用</li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="jz-header">
+    <div class="jz-header-inner">
+      <a class="jz-brand" href="#top">
+        <span class="jz-brand-logo">九1</span>
+        <span>
+          <span class="jz-brand-name">九1制品厂</span>
+          <span class="jz-brand-sub">MEDIA · LAB</span>
+        </span>
+      </a>
+      <nav class="jz-nav">
+        <a href="#focus">焦点内容</a>
+        <a href="#parse">厂牌解析</a>
+        <a href="#topics">制作企划</a>
+        <a href="#authors">创作者</a>
+        <a href="#board">数据榜单</a>
+        <a href="#voice">口碑</a>
+        <a href="#faq">帮助</a>
+      </nav>
+      <div class="jz-head-tools">
+        <div class="jz-search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+          <input id="jzSearchInput" type="search" placeholder="搜索制作传媒资源" aria-label="搜索内容">
+          <div class="jz-search-hint" id="jzSearchHint"></div>
+        </div>
+        <button class="jz-btn-ghost" data-modal="submitModal">投稿入口</button>
+        <button class="jz-btn-solid" data-modal="joinModal">加入社区</button>
+        <button class="jz-burger" id="jzBurger" aria-label="展开导航" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+    <div class="jz-mobile-nav" id="jzMobileNav">
+      <a href="#focus">焦点内容</a>
+      <a href="#parse">厂牌解析</a>
+      <a href="#topics">制作企划</a>
+      <a href="#authors">创作者</a>
+      <a href="#board">数据榜单</a>
+      <a href="#voice">口碑</a>
+      <a href="#faq">帮助</a>
+      <a href="#" data-modal="submitModal">投稿入口</a>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="jz-hero">
+    <div class="jz-wrap jz-hero-grid">
+      <div>
+        <span class="jz-hero-eyebrow"><i></i>九1制品厂 官方网站</span>
+        <h1 class="jz-h1">九1制品厂制作传媒资源<em>官方视频门户</em></h1>
+        <p class="jz-hero-lead">从一台机器、一间棚、一条成片开始，我们持续记录「制作」这件事的全部真实过程，并把可复用的传媒资源交给每一位创作者。</p>
+        <p class="jz-hero-intro">作为深耕制作传媒资源垂直领域的原创视频品牌，九1制品厂官方网站专注企业级内容生态建设：我们自建拍摄棚与后期工位，持续输出高清正版短片、幕后流程与制作方法论，为创作者与品牌方搭建值得信赖的社区平台，用匠心与品质赢得用户口碑。</p>
+        <div class="jz-hero-cta">
+          <a class="jz-btn-solid" href="#focus">观看精选成片</a>
+          <button class="jz-btn-ghost" data-modal="submitModal">上传我的作品</button>
+          <button class="jz-btn-ghost" data-modal="joinModal">领取资源包</button>
+        </div>
+        <div class="jz-hero-stats">
+          <div class="jz-stat"><b>1,860+</b><span>原创制作内容</span></div>
+          <div class="jz-stat"><b>42 万</b><span>制作从业者社区</span></div>
+          <div class="jz-stat"><b>96.4%</b><span>素材正版可商用</span></div>
+        </div>
+      </div>
+      <div class="jz-hero-visual">
+        <div class="jz-hero-frame">
+          <svg viewBox="0 0 800 620" role="img" aria-label="九1制品厂棚内拍摄现场全景，灯架与摄影机轨道交错">
+            <defs>
+              <linearGradient id="jzHeroSky" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1d2129"/><stop offset="1" stop-color="#2a1f1a"/>
+              </linearGradient>
+              <linearGradient id="jzHeroBeam" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffd166" stop-opacity=".55"/><stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="620" fill="url(#jzHeroSky)"/>
+            <!-- 顶灯 -->
+            <path d="M330 0 L470 0 L560 300 L240 300 Z" fill="url(#jzHeroBeam)"/>
+            <rect x="352" y="34" width="96" height="16" rx="8" fill="#ffd166"/>
+            <rect x="386" y="50" width="28" height="26" fill="#3a3f4c"/>
+            <!-- 地面 -->
+            <rect y="452" width="800" height="168" fill="#15171d"/>
+            <path d="M0 452 L800 452" stroke="#3d4350" stroke-width="2"/>
+            <!-- 摄影机 -->
+            <g>
+              <rect x="300" y="330" width="130" height="72" rx="10" fill="#2c313b" stroke="#4a5160" stroke-width="2"/>
+              <path d="M430 348 L500 324 L500 408 L430 384 Z" fill="#232832" stroke="#4a5160" stroke-width="2"/>
+              <circle cx="352" cy="366" r="24" fill="#101318" stroke="#ff6a3d" stroke-width="3"/>
+              <circle cx="352" cy="366" r="9" fill="#4ecdc4" opacity=".85"/>
+              <rect x="330" y="402" width="18" height="50" fill="#3a3f4c"/>
+              <rect x="392" y="402" width="18" height="50" fill="#3a3f4c"/>
+              <path d="M250 452 L560 452" stroke="#565e6e" stroke-width="4"/>
+            </g>
+            <!-- 灯架 -->
+            <g stroke="#565e6e" stroke-width="5" fill="none">
+              <path d="M120 452 L120 170"/><path d="M86 452 L154 452"/>
+              <path d="M680 452 L680 200"/><path d="M646 452 L714 452"/>
+            </g>
+            <rect x="76" y="132" width="88" height="44" rx="8" fill="#ff6a3d" opacity=".9"/>
+            <rect x="636" y="164" width="88" height="44" rx="8" fill="#4ecdc4" opacity=".8"/>
+            <!-- 人 -->
+            <g>
+              <circle cx="590" cy="286" r="20" fill="#e0c3a3"/>
+              <path d="M556 452 L556 336 Q590 306 624 336 L624 452 Z" fill="#333a47"/>
+            </g>
+            <!-- 素材架 -->
+            <g fill="#22262f" stroke="#3a4150" stroke-width="2">
+              <rect x="40" y="352" width="150" height="100" rx="8"/>
+            </g>
+            <g fill="#4e5666">
+              <rect x="56" y="368" width="34" height="10" rx="3"/>
+              <rect x="56" y="388" width="52" height="10" rx="3"/>
+              <rect x="56" y="408" width="40" height="10" rx="3"/>
+              <rect x="56" y="428" width="46" height="10" rx="3"/>
+            </g>
+            <circle cx="152" cy="400" r="18" fill="none" stroke="#ffd166" stroke-width="3"/>
+          </svg>
+        </div>
+        <div class="jz-hero-play">
+          <i></i>
+          <span><b>本季主打 · 一条片子的 17 道工序</b><small>制作纪录 / 24:18 / 高清正版</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点 + 视频列表 -->
+  <section class="jz-section" id="focus">
+    <div class="jz-wrap">
+      <div class="jz-sec-head">
+        <h2 class="jz-sec-title"><small>FOCUS CONTENT</small>九1制品厂焦点内容｜制作传媒资源精选</h2>
+        <p class="jz-sec-desc">编辑部每周从九1制品厂官方网站上传的原创投稿中筛选一条重点成片，配以完整制作链路拆解，其余条目以文字索引呈现，方便快速检索。</p>
+      </div>
+
+      <div class="jz-focus-grid">
+        <article class="jz-focus-main">
+          <div class="jz-focus-cover">
+            <svg viewBox="0 0 800 450" role="img" aria-label="后期工位特写，三块屏幕同时显示时间线与调色面板">
+              <defs>
+                <linearGradient id="jzFc1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#171a21"/><stop offset="1" stop-color="#232833"/>
+                </linearGradient>
+              </defs>
+              <rect width="800" height="450" fill="url(#jzFc1)"/>
+              <rect x="60" y="60" width="300" height="180" rx="8" fill="#101319" stroke="#39404d" stroke-width="2"/>
+              <rect x="440" y="60" width="300" height="180" rx="8" fill="#101319" stroke="#39404d" stroke-width="2"/>
+              <rect x="250" y="260" width="300" height="130" rx="8" fill="#0d1015" stroke="#39404d" stroke-width="2"/>
+              <g fill="#ff6a3d" opacity=".85">
+                <rect x="80" y="190" width="26" height="36" rx="2"/>
+                <rect x="116" y="164" width="26" height="62" rx="2"/>
+                <rect x="152" y="140" width="26" height="86" rx="2"/>
+                <rect x="188" y="172" width="26" height="54" rx="2"/>
+                <rect x="224" y="150" width="26" height="76" rx="2"/>
+              </g>
+              <g fill="#4ecdc4" opacity=".8">
+                <rect x="460" y="200" width="260" height="8" rx="4"/>
+                <rect x="460" y="216" width="180" height="8" rx="4"/>
+                <rect x="460" y="96" width="120" height="60" rx="6"/>
+              </g>
+              <rect x="270" y="278" width="260" height="12" rx="6" fill="#2c3340"/>
+              <rect x="270" y="278" width="150" height="12" rx="6" fill="#ffd166"/>
+              <circle cx="422" cy="284" r="10" fill="#e9edf4"/>
+              <g stroke="#3a4150" stroke-width="2" fill="none">
+                <rect x="60" y="336" width="120" height="34" rx="7"/>
+                <rect x="196" y="336" width="120" height="34" rx="7"/>
+              </g>
+              <circle cx="700" cy="320" r="46" fill="none" stroke="#ff6a3d" stroke-width="8" stroke-dasharray="180 110" stroke-linecap="round"/>
+              <text x="700" y="326" fill="#d8dde6" font-size="16" text-anchor="middle" font-family="sans-serif">调色</text>
+            </svg>
+          </div>
+          <div class="jz-focus-body">
+            <span class="jz-chip">制作方法论 · 深度拆解</span>
+            <h3>一条 90 秒品牌片如何用 17 道工序落地：从脚本到交片的完整时间表</h3>
+            <p>这条成片来自九1制品厂创作组的公开项目日志。我们把 11 天的真实排期、3 次返工原因、以及被删掉的 46 分钟素材一并公开，配合可下载的分镜表格与调色 LUT，供制作团队直接复用。</p>
+            <div class="jz-meta-row">
+              <span>作者 <b>陈砚舟</b></span>
+              <span>播放 <b>38.2 万</b></span>
+              <span>收藏 <b>1.9 万</b></span>
+              <span>时长 <b>24:18</b></span>
+              <button class="jz-icon-btn" data-like>△ 点赞 <b>0</b></button>
+              <button class="jz-icon-btn" data-save>☆ 收藏</button>
+              <button class="jz-icon-btn" data-copy>⧉ 复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="jz-vlist">
+          <article class="jz-vitem">
+            <span class="jz-vnum">01</span>
+            <div>
+              <h4>棚内多机位布光：三灯位解决 80% 中小型拍摄需求</h4>
+              <p>主光、辅光、轮廓光的现场摆位实录，附照度对照表与色温校准步骤。</p>
+              <div class="jz-vtags"><span>布光教程</span><span>棚拍</span><span>实用技巧</span></div>
+            </div>
+            <div class="jz-vdata">
+              <span>播放 21.6 万</span>
+              <button class="jz-icon-btn" data-like>△ <b>0</b></button>
+            </div>
+          </article>
+          <article class="jz-vitem">
+            <span class="jz-vnum">02</span>
+            <div>
+              <h4>采访片的声音设计：从领夹麦到环境声的三层结构</h4>
+              <p>拆解 4 支不同价位麦克风在同场景下的收音差异，给出混音参数建议。</p>
+              <div class="jz-vtags"><span>音频制作</span><span>访谈</span><span>测评</span></div>
+            </div>
+            <div class="jz-vdata">
+              <span>播放 17.4 万</span>
+              <button class="jz-icon-btn" data-like>△ <b>0</b></button>
+            </div>
+          </article>
+          <article class="jz-vitem">
+            <span class="jz-vnum">03</span>
+            <div>
+              <h4>制品厂开放日：一台老剪辑机与三代人的工位记忆</h4>
+              <p>从磁带对编到云剪辑，用一件设备的服役史讲清制作传媒资源的变迁。</p>
+              <div class="jz-vtags"><span>品牌故事</span><span>行业观察</span><span>纪录</span></div>
+            </div>
+            <div class="jz-vdata">
+              <span>播放 15.8 万</span>
+              <button class="jz-icon-btn" data-like>△ <b>0</b></button>
+            </div>
+          </article>
+          <article class="jz-vitem">
+            <span class="jz-vnum">04</span>
+            <div>
+              <h4>城市夜戏实拍攻略：低照度下的降噪与保留颗粒</h4>
+              <p>两条不同后期路径对比，说明什么时候该救、什么时候该留。</p>
+              <div class="jz-vtags"><span>实拍攻略</span><span>城市探索</span><span>调色</span></div>
+            </div>
+            <div class="jz-vdata">
+              <span>播放 13.1 万</span>
+              <button class="jz-icon-btn" data-like>△ <b>0</b></button>
+            </div>
+          </article>
+          <article class="jz-vitem">
+            <span class="jz-vnum">05</span>
+            <div>
+              <h4>新人第一支片：用一台相机拍出可交付的企业短片</h4>
+              <p>面向刚入行创作者的完整路线，含预算分配与拍摄清单下载。</p>
+              <div class="jz-vtags"><span>新人教程</span><span>成长</span><span>干货</span></div>
+            </div>
+            <div class="jz-vdata">
+              <span>播放 11.9 万</span>
+              <button class="jz-icon-btn" data-like>△ <b>0</b></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 -->
+  <section class="jz-section alt" id="parse">
+    <div class="jz-wrap">
+      <div class="jz-sec-head">
+        <h2 class="jz-sec-title"><small>BRAND ANALYSIS</small>关键词解析：九1制品厂制作传媒资源</h2>
+        <p class="jz-sec-desc">为什么一个「制品厂」会做传媒资源？这一节从企业背景、平台体系与内容生态三个角度，把关键词拆开讲清楚。</p>
+      </div>
+      <div class="jz-parse-grid">
+        <div>
+          <h3>一、从「制品」到「制作」：九1制品厂的企业背景与转向</h3>
+          <p>九1制品厂最初是一家以实体制品加工为主的小型工厂，车间里长期保留着一套用于拍摄产品样片的简易设备。2021 年前后，团队发现客户对产品影像的需求远远超出「拍一段能看的视频」——他们需要分镜、需要灯光方案、需要能二次复用的素材，也需要知道这些素材到底能不能商用。于是工厂把第二车间改成了拍摄棚，把样片组独立成制作组，九1制品厂制作传媒资源这条业务线由此开始。</p>
+          <p>这个转向并不是一次浪漫的跨界。它带来的第一件好事是流程意识：工厂里做制品讲究工序、验收和责任到人，这套逻辑被平移到了制作上，一条片子从需求确认、脚本过审、勘景排期、素材归档到交付验收，每一步都有对应的表单和责任人。第二件好事是成本意识：因为长期做实体制造，团队非常清楚哪些环节该省、哪些环节不能省，所以在资源包设计上格外克制，只保留真正高频使用的内容。</p>
+          <p>到今天，九1制品厂官方网站已经形成三条主线：一是原创成片，记录真实的制作过程；二是可商用素材与工具模板；三是创作者社区，让制作从业者在里面互相校对、互相借力。这三条线共同构成了「制作传媒资源」这个关键词的实际含义——它不是一堆文件，而是一套持续运营的内容生态。</p>
+
+          <h3>二、平台体系：原创、正版、高清三条底线</h3>
+          <p>在传媒资源这个领域，最容易被忽视的是授权边界。九1制品厂把「正版」写进了资源上架的硬性流程：所有音乐、字体、影像素材必须提供来源凭证与授权范围说明，无法确认商用边界的素材一律不进库。这条规则让素材增长速度变慢，但换来了用户口碑——社区里最常见的反馈是「在这里下载的东西，敢直接放进客户项目里」。</p>
+          <p>「高清」同样不是一句宣传语。平台对上传内容设定了分辨率与码率的最低门槛，重要专题还会提供 4K 版本供二次剪辑使用。技术团队为此保留了独立的转码队列，避免高峰时段出现排队积压。对制作团队来说，这些基础设施带来的体验差异，往往比多几个花哨特效更重要。</p>
+          <p>「原创」则体现在内容 attribution 上。每一份上架资源都会标注创作者、参与成员与创作时间，二次使用时保留出处信息是社区公约的一部分。九1制品厂认为，制作传媒资源这个行业真正的门槛不是设备，而是对创作者劳动的尊重。当出处被认真对待，创作者才愿意持续上传，内容生态才能自我循环。</p>
+
+          <h3>三、内容生态：创作者、企业与观众的三方关系</h3>
+          <p>九1制品厂官方网站的社区结构相对简单：创作者上传作品与方法论，企业方发布真实需求，观众用收藏与评论完成筛选。三者之间没有复杂的层级，平台只负责把「可信度」做出来。所谓可信度，包括作者资质展示、作品数据公开、评价不做人工干预，以及每一季度公布的资源使用报告。</p>
+          <p>我们观察到的一个有意思现象是：社区里最受欢迎的内容，往往不是最炫技的成片，而是那些把「失败环节」讲清楚的条目。比如一条讲补拍原因的纪录，播放量常年排在站内前列。这说明制作从业者真正需要的是可迁移的经验，而不是结果展示。九1制品厂因此在企划上刻意保留失败案例与返工记录，让内容生态具备真实感与陪伴感。</p>
+          <p>面向企业方，平台提供的是需求对接与制作监理两类服务。前者帮品牌方找到匹配的制作团队，后者在项目执行中做节点验收与素材合规检查。这两项服务让九1制品厂从单纯的内容方变成了产业链中的一环，也让「制作传媒资源」从一个素材概念，扩展为可交付的专业服务。</p>
+
+          <h3>四、长期主义：一个厂牌的持续运营逻辑</h3>
+          <p>内容平台的难点从来不在于开站，而在于持续运营。九1制品厂的做法是把更新节奏写进制度：每周固定上线两条制作纪录，每月上线一组资源包，每季度做一次社区评比。节奏稳定带来的好处是可预期，创作者知道什么时候该交稿，用户知道什么时候该回来看看。</p>
+          <p>另一种长期主义的体现是对新人的耐心。平台设有一个不算显眼但持续更新的新人通道，作品不要求成熟，只要流程完整、说明清楚就能获得展示。过去两年里，有三十多位创作者从这个通道走出来，成为社区的中坚力量。九1制品厂相信，制作传媒资源的未来不取决于今天有多少设备，而取决于有多少人愿意认真把第一支片拍完。</p>
+          <p>我们也在尝试把影响力用在更有公共价值的地方：与地方院校合作开放拍摄棚，为公益项目提供免费制作支持，把部分资源包收益投入青年创作者基金。这些动作不会带来即时流量，但它们构成了一个品牌值得信赖的理由。九1制品厂官方网站会持续公开这些项目的进展，接受社区监督。</p>
+        </div>
+        <aside class="jz-parse-aside">
+          <h3>关键词要素拆解</h3>
+          <ul>
+            <li><b>九1制品厂</b><span>品牌主体，来自实体制造背景，强调工序、验收与责任到人。</span></li>
+            <li><b>制作</b><span>核心动作，涵盖脚本、拍摄、灯光、录音、剪辑、调色与交付全链路。</span></li>
+            <li><b>传媒</b><span>内容属性，面向品牌传播、纪录表达与公共信息传递。</span></li>
+            <li><b>资源</b><span>可复用资产，包括素材、模板、工具、方法论与人才池。</span></li>
+            <li><b>官方网站</b><span>唯一官方发布入口，承担企业动态、官方发布与资源上架职责。</span></li>
+          </ul>
+          <h3 style="margin-top:22px">平台三条底线</h3>
+          <ul>
+            <li><b>原创</b><span>标注作者与创作时间，二次使用保留出处。</span></li>
+            <li><b>正版</b><span>授权凭证齐全，商用边界清晰可查。</span></li>
+            <li><b>高清</b><span>分辨率与码率双门槛，重要专题提供 4K。</span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="jz-section" id="topics">
+    <div class="jz-wrap">
+      <div class="jz-sec-head">
+        <h2 class="jz-sec-title"><small>PROGRAMS</small>制作企划｜九1制品厂的长期专题</h2>
+        <p class="jz-sec-desc">三个正在更新的专题，覆盖实拍、档案与共创三种不同形态的制作传媒资源，方便按需追踪。</p>
+      </div>
+      <div class="jz-topics">
+        <article class="jz-topic">
+          <div class="jz-topic-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="实拍现场俯视图，地面贴着走位标记与灯位编号">
+              <rect width="480" height="270" fill="#1a1d24"/>
+              <rect x="40" y="36" width="400" height="198" rx="8" fill="#141720" stroke="#333a47" stroke-width="2"/>
+              <g stroke="#ff6a3d" stroke-width="2" stroke-dasharray="7 7" fill="none" opacity=".8">
+                <circle cx="150" cy="135" r="46"/>
+                <circle cx="330" cy="135" r="46"/>
+              </g>
+              <rect x="206" y="96" width="68" height="78" rx="6" fill="#2b313c" stroke="#4ecdc4" stroke-width="2"/>
+              <g fill="#ffd166" font-size="12" font-family="sans-serif">
+                <text x="86" y="60">A1</text><text x="378" y="60">A2</text>
+                <text x="86" y="220">B1</text><text x="378" y="220">B2</text>
+              </g>
+              <g stroke="#565e6e" stroke-width="1.5">
+                <path d="M0 14 L480 14" opacity=".4"/><path d="M0 256 L480 256" opacity=".4"/>
+              </g>
+            </svg>
+          </div>
+          <h3>专题一 · 棚内实拍手册</h3>
+          <p>把中小型拍摄现场的布光、收音、走位整理成可执行的检查清单，每期配真实机位图。</p>
+          <div class="jz-topic-status">● 更新中 · 已上线 6 期</div>
+          <div class="jz-topic-list">
+            <a href="#focus">三灯位布光与照度对照表</a>
+            <a href="#focus">多机位同步的现场纪律</a>
+            <a href="#focus">收声与画面动线的冲突处理</a>
+          </div>
+        </article>
+        <article class="jz-topic">
+          <div class="jz-topic-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="档案架侧视图，成排磁带与硬盘盒按年份排列">
+              <rect width="480" height="270" fill="#181a20"/>
+              <rect x="24" y="24" width="432" height="222" rx="8" fill="#121419" stroke="#303744" stroke-width="2"/>
+              <g fill="#2a303b" stroke="#3d4553" stroke-width="1.5">
+                <rect x="48" y="52" width="88" height="52" rx="5"/>
+                <rect x="148" y="52" width="88" height="52" rx="5"/>
+                <rect x="248" y="52" width="88" height="52" rx="5"/>
+                <rect x="348" y="52" width="88" height="52" rx="5"/>
+                <rect x="48" y="122" width="88" height="52" rx="5"/>
+                <rect x="148" y="122" width="88" height="52" rx="5"/>
+                <rect x="248" y="122" width="88" height="52" rx="5"/>
+                <rect x="348" y="122" width="88" height="52" rx="5"/>
+              </g>
+              <circle cx="92" cy="78" r="11" fill="#ff6a3d" opacity=".85"/>
+              <circle cx="192" cy="78" r="11" fill="none" stroke="#ffd166" stroke-width="2.5"/>
+              <circle cx="292" cy="78" r="11" fill="#4ecdc4" opacity=".8"/>
+              <circle cx="392" cy="78" r="11" fill="#565e6e"/>
+              <rect x="66" y="146" width="52" height="8" rx="4" fill="#4a525f"/>
+              <rect x="166" y="146" width="52" height="8" rx="4" fill="#4a525f"/>
+              <rect x="266" y="146" width="52" height="8" rx="4" fill="#4a525f"/>
+              <rect x="366" y="146" width="52" height="8" rx="4" fill="#4a525f"/>
+              <rect x="48" y="200" width="388" height="4" rx="2" fill="#333a47"/>
+            </svg>
+          </div>
+          <h3>专题二 · 制品厂档案</h3>
+          <p>用实物与生产日志讲述制作工具的演进，把设备史与从业者记忆一起存档。</p>
+          <div class="jz-topic-status">● 更新中 · 已上线 4 期</div>
+          <div class="jz-topic-list">
+            <a href="#focus">磁带对编机的最后一百天</a>
+            <a href="#focus">硬盘盒标签里的项目命名学</a>
+            <a href="#focus">一间棚的九年改造图</a>
+          </div>
+        </article>
+        <article class="jz-topic">
+          <div class="jz-topic-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="共创工作台插画，多块色块拼接成一张分镜板">
+              <rect width="480" height="270" fill="#1c1a22"/>
+              <g stroke="#3c3548" stroke-width="2" fill="#242030">
+                <rect x="36" y="40" width="126" height="82" rx="7"/>
+                <rect x="178" y="40" width="126" height="82" rx="7"/>
+                <rect x="320" y="40" width="126" height="82" rx="7"/>
+                <rect x="36" y="140" width="126" height="82" rx="7"/>
+                <rect x="178" y="140" width="126" height="82" rx="7"/>
+                <rect x="320" y="140" width="126" height="82" rx="7"/>
+              </g>
+              <g>
+                <rect x="52" y="56" width="94" height="12" rx="6" fill="#ff6a3d" opacity=".8"/>
+                <rect x="52" y="78" width="64" height="8" rx="4" fill="#5c5468"/>
+                <rect x="194" y="56" width="80" height="8" rx="4" fill="#5c5468"/>
+                <rect x="194" y="74" width="94" height="8" rx="4" fill="#5c5468"/>
+                <circle cx="383" cy="82" r="26" fill="none" stroke="#ffd166" stroke-width="3"/>
+                <rect x="52" y="170" width="70" height="8" rx="4" fill="#5c5468"/>
+                <rect x="52" y="188" width="94" height="8" rx="4" fill="#5c5468"/>
+                <rect x="194" y="170" width="94" height="36" rx="6" fill="#4ecdc4" opacity=".5"/>
+                <path d="M336 196 L412 196" stroke="#ff6a3d" stroke-width="4" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <h3>专题三 · 共创计划</h3>
+          <p>面向社区开放选题与素材，多人共同完成一条片，全过程公开可回看。</p>
+          <div class="jz-topic-status">● 报名中 · 第 3 季</div>
+          <div class="jz-topic-list">
+            <a href="#focus">第 3 季选题投票与组队规则</a>
+            <a href="#focus">共创片的分工与验收方式</a>
+            <a href="#focus">上一季成片与失败复盘</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="jz-section alt" id="authors">
+    <div class="jz-wrap">
+      <div class="jz-sec-head">
+        <h2 class="jz-sec-title"><small>CREATORS</small>九1制品厂创作者矩阵</h2>
+        <p class="jz-sec-desc">社区里的四位常驻创作者，各自负责制作传媒资源中的一个环节，从摄影到声音，从策展到社群运营。</p>
+      </div>
+      <div class="jz-authors">
+        <article class="jz-author">
+          <div class="jz-avatar" style="background:linear-gradient(140deg,#ff6a3d,#ffd166)">陈</div>
+          <div class="jz-author-main">
+            <h3>陈砚舟</h3>
+            <div class="jz-author-field">摄影指导 · 布光与机位</div>
+            <p>十二年商业拍摄经验，擅长在有限空间里做减法。负责「棚内实拍手册」专题，习惯把每次布光画成平面图再执行，认为可复述的方案才是好方案。</p>
+            <div class="jz-author-nums"><span>作品 <b>186</b></span><span>粉丝 <b>8.4 万</b></span><span>收藏 <b>3.1 万</b></span></div>
+          </div>
+        </article>
+        <article class="jz-author">
+          <div class="jz-avatar" style="background:linear-gradient(140deg,#4ecdc4,#7bd8ff)">闻</div>
+          <div class="jz-author-main">
+            <h3>闻一澜</h3>
+            <div class="jz-author-field">声音设计 · 混音与现场收音</div>
+            <p>从广播剧转行进入影视声音，擅长处理嘈杂环境下的对白修复。她坚持每条成片都要留一轨纯环境声，认为声音是制作传媒资源里最容易被低估的部分。</p>
+            <div class="jz-author-nums"><span>作品 <b>142</b></span><span>粉丝 <b>6.2 万</b></span><span>收藏 <b>2.4 万</b></span></div>
+          </div>
+        </article>
+        <article class="jz-author">
+          <div class="jz-avatar" style="background:linear-gradient(140deg,#ffd166,#a6f1c4)">俞</div>
+          <div class="jz-author-main">
+            <h3>俞北岸</h3>
+            <div class="jz-author-field">剪辑与调色 · 后期流程</div>
+            <p>负责后期流程标准化，把自由职业时期的野路子整理成可交接的工程规范。他在社区分享的工程目录模板被下载两万余次，是九1制品厂最实用的资源之一。</p>
+            <div class="jz-author-nums"><span>作品 <b>204</b></span><span>粉丝 <b>9.7 万</b></span><span>收藏 <b>4.3 万</b></span></div>
+          </div>
+        </article>
+        <article class="jz-author">
+          <div class="jz-avatar" style="background:linear-gradient(140deg,#c4a6ff,#ff9fc4)">苏</div>
+          <div class="jz-author-main">
+            <h3>苏照野</h3>
+            <div class="jz-author-field">策展与访谈 · 品牌故事</div>
+            <p>原是纪录片编辑，现负责九1制品厂的档案专题与人物访谈。她关心的是作品背后的人：谁在做、为什么做、做完之后留下什么。访谈风格克制，问题却很硬。</p>
+            <div class="jz-author-nums"><span>作品 <b>98</b></span><span>粉丝 <b>5.1 万</b></span><span>收藏 <b>1.7 万</b></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 榜单 + 评价 -->
+  <section class="jz-section" id="board">
+    <div class="jz-wrap">
+      <div class="jz-sec-head">
+        <h2 class="jz-sec-title"><small>RANKING</small>数据榜单｜制作传媒资源热度、新人与口碑</h2>
+        <p class="jz-sec-desc">榜单数据来自站内真实播放、收藏与完播表现，每两周更新一次，不做人工置顶。</p>
+      </div>
+      <div class="jz-boards">
+        <div class="jz-board">
+          <h3>热度榜</h3>
+          <ul>
+            <li><span>1</span>一条片子的 17 道工序<b>38.2 万</b></li>
+            <li><span>2</span>三灯位布光实测<b>21.6 万</b></li>
+            <li><span>3</span>采访片三层声音结构<b>17.4 万</b></li>
+            <li><span>4</span>老剪辑机的最后一百天<b>15.8 万</b></li>
+            <li><span>5</span>城市夜戏降噪取舍<b>13.1 万</b></li>
+          </ul>
+        </div>
+        <div class="jz-board">
+          <h3>新人榜</h3>
+          <ul>
+            <li><span>1</span>何遇 · 首支纪录短片<b>9.3 万</b></li>
+            <li><span>2</span>梁迟 · 手持跟拍练习<b>7.8 万</b></li>
+            <li><span>3</span>周未 · 一镜到底的失败<b>6.4 万</b></li>
+            <li><span>4</span>许南枝 · 田野收音笔记<b>5.9 万</b></li>
+            <li><span>5</span>程也 · 分镜表重构<b>5.2 万</b></li>
+          </ul>
+        </div>
+        <div class="jz-board">
+          <h3>口碑榜</h3>
+          <ul>
+            <li><span>1</span>工程目录模板<b>4.9 分</b></li>
+            <li><span>2</span>4K 转场包 36 组<b>4.8 分</b></li>
+            <li><span>3</span>棚内实拍手册<b>4.8 分</b></li>
+            <li><span>4</span>声音修复参数集<b>4.7 分</b></li>
+            <li><span>5</span>新人拍摄清单<b>4.6 分</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评论 -->
+  <section class="jz-section alt" id="voice">
+    <div class="jz-wrap">
+      <div class="jz-sec-head">
+        <h2 class="jz-sec-title"><small>VOICES</small>社区口碑｜来自制作一线的真实评价</h2>
+        <p class="jz-sec-desc">以下评价来自九1制品厂官方网站的公开评论区，涵盖独立创作者、品牌甲方与院校师生不同视角。</p>
+      </div>
+      <div class="jz-comments">
+        <article class="jz-comment">
+          <div class="jz-comment-top"><div class="jz-comment-av" style="background:#ff6a3d">林</div><b>林间剪辑室</b><small>独立创作者</small></div>
+          <p>工程目录模板救了我一整个交付季。以前每个项目都乱，现在接手别人的工程也能在十分钟内找到素材。这种细节才叫真正的制作传媒资源。</p>
+          <div class="jz-stars">★★★★★</div>
+        </article>
+        <article class="jz-comment">
+          <div class="jz-comment-top"><div class="jz-comment-av" style="background:#4ecdc4">赵</div><b>赵工</b><small>品牌市场负责人</small></div>
+          <p class="jz-quote">我们连续两个季度用九1制品厂做制作监理。说实话比多省钱更有价值的是少踩坑，素材授权清单一次过审，法务那边基本没返工。</p>
+        </article>
+        <article class="jz-comment">
+          <div class="jz-comment-top"><div class="jz-comment-av" style="background:#ffd166">阿</div><b>阿岚拍片</b><small>入行两年</small></div>
+          <p>新人通道是真的有在用，我第一支片就是那里发的。没有人嘲笑我的构图，反而有人认真写了两百字建议。这种氛围挺难得的。</p>
+          <div class="jz-stars">★★★★★</div>
+        </article>
+        <article class="jz-comment">
+          <div class="jz-comment-top"><div class="jz-comment-av" style="background:#c4a6ff">周</div><b>周老师</b><small>院校影视教师</small></div>
+          <p>我把它当作课堂补充材料，纪录片环节会直接放「老剪辑机的最后一百天」。学生第一次意识到设备史也是行业史，比讲概念有用得多。</p>
+        </article>
+        <article class="jz-comment">
+          <div class="jz-comment-top"><div class="jz-comment-av" style="background:#a6f1c4">韩</div><b>韩序</b><small>声音设计师</small></div>
+          <p>声音内容少但有质量。三层声音结构那期我看了两遍，混音参数给得很实在，不是那种说了等于没说的经验谈。</p>
+          <div class="jz-stars">★★★★☆</div>
+        </article>
+        <article class="jz-comment">
+          <div class="jz-comment-top"><div class="jz-comment-av" style="background:#ff9fc4">K</div><b>Kino 小组</b><small>学生团队</small></div>
+          <p>资源包能不能多一些竖屏模板？现在项目越来越需要双版本交付了。整体还是很好，正版可商用这点让我们敢直接给学校项目用。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动态 + FAQ -->
+  <section class="jz-section" id="faq">
+    <div class="jz-wrap">
+      <div class="jz-sec-head">
+        <h2 class="jz-sec-title"><small>NEWS &amp; HELP</small>企业动态与常见问题</h2>
+        <p class="jz-sec-desc">官方发布与平台规则更新都集中在这里，便于创作者与品牌方快速确认最新状态。</p>
+      </div>
+      <div class="jz-duo">
+        <div>
+          <h3 style="font-size:16px;margin-bottom:6px;color:var(--c-accent2);letter-spacing:1px">企业动态</h3>
+          <ul class="jz-news">
+            <li><time>2026-11-18</time><p>九1制品厂完成第二拍摄棚灯光系统升级，新增高显色影视灯 12 组，周三起开放预约。</p></li>
+            <li><time>2026-11-10</time><p>「共创计划」第 3 季报名通道开启，本期选题聚焦城市日常制作，预计招募 24 位成员。</p></li>
+            <li><time>2026-10-29</time><p>素材库完成新一轮授权核查，下架 11 组授权边界不清的音频，同步补充替代曲目。</p></li>
+            <li><time>2026-10-15</time><p>官方网站上线资源使用报告页，按季度公开下载量、授权范围与创作者分成明细。</p></li>
+            <li><time>2026-09-30</time><p>与三所院校达成合作，向影视相关专业开放棚拍教学场次，每学期 8 场。</p></li>
+          </ul>
+        </div>
+        <div class="jz-faq">
+          <h3 style="font-size:16px;margin-bottom:6px;color:var(--c-accent2);letter-spacing:1px">常见问题</h3>
+          <details open>
+            <summary>九1制品厂的资源可以商用吗？</summary>
+            <p>可以。凡标注「正版可商用」的资源都附带授权范围说明，个人项目与企业项目均适用，但不得二次转售或作为独立素材包再分发。具体条款见每份资源的下载页。</p>
+          </details>
+          <details>
+            <summary>投稿有题材限制吗？</summary>
+            <p>只要与制作相关即可：成片、幕后、教程、设备测评、失败复盘都欢迎。我们不接受纯搬运内容与授权不明的素材拼接。</p>
+          </details>
+          <details>
+            <summary>棚拍预约需要提前多久？</summary>
+            <p>常规时段建议提前 7 天预约，节假日与拍摄旺季建议提前 14 天。共创计划成员可享优先排期。</p>
+          </details>
+          <details>
+            <summary>新人通道的作品会被要求修改吗？</summary>
+            <p>不会强制修改，但编辑会给出书面建议。是否采纳由创作者决定，我们只保证每份投稿都有人认真看完。</p>
+          </details>
+          <details>
+            <summary>素材下载失败怎么办？</summary>
+            <p>请先确认下载链接是否过期，资源页的有效期为 30 天。仍无法下载可在「联系与投稿」中提交工单，通常 24 小时内回复。</p>
+          </details>
+          <details>
+            <summary>可以申请成为常驻创作者吗？</summary>
+            <p>可以。需要在站内连续发布 6 条以上原创内容，并通过一次线上沟通。我们更看重持续输出的稳定性，而不是单条爆款。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作 + 投稿 -->
+  <section class="jz-section alt">
+    <div class="jz-wrap">
+      <div class="jz-sec-head">
+        <h2 class="jz-sec-title"><small>PARTNERS</small>合作品牌与共创伙伴</h2>
+        <p class="jz-sec-desc">九1制品厂与设备、场地、院校与品牌方保持长期合作，共同托举制作传媒资源的公共底座。</p>
+      </div>
+      <div class="jz-partners">
+        <div class="jz-partner">光野器材<small>EQUIPMENT</small></div>
+        <div class="jz-partner">南岸影棚<small>STUDIO</small></div>
+        <div class="jz-partner">声谷音频<small>AUDIO</small></div>
+        <div class="jz-partner">拾光学院<small>EDUCATION</small></div>
+      </div>
+
+      <div class="jz-submit" style="margin-top:34px">
+        <div>
+          <h2>把你的制作经验交给社区</h2>
+          <p>无论是成片、幕后还是失败复盘，九1制品厂官方网站都欢迎你上传。我们提供正版素材支持、制作监理与官方发布渠道，让好内容被更多人看到。</p>
+        </div>
+        <div style="display:flex;gap:11px;flex-wrap:wrap">
+          <button class="jz-btn-solid" data-modal="submitModal">立即投稿</button>
+          <button class="jz-btn-ghost" data-modal="reportModal">反馈建议</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="jz-footer">
+  <div class="jz-wrap">
+    <div class="jz-footer-grid">
+      <div class="jz-footer-brand">
+        <a class="jz-brand" href="#top">
+          <span class="jz-brand-logo">九1</span>
+          <span>
+            <span class="jz-brand-name">九1制品厂</span>
+            <span class="jz-brand-sub">MEDIA · LAB</span>
+          </span>
+        </a>
+        <p>九1制品厂官方网站 · 制作传媒资源平台。我们持续运营原创内容与正版素材，服务创作者与企业，用真实记录推动行业成长。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#focus">焦点内容</a></li>
+          <li><a href="#topics">制作企划</a></li>
+          <li><a href="#board">数据榜单</a></li>
+          <li><a href="#voice">社区口碑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#" data-modal="submitModal">投稿入口</a></li>
+          <li><a href="#" data-modal="joinModal">加入社区</a></li>
+          <li><a href="#authors">创作者矩阵</a></li>
+          <li><a href="#faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li>合作邮箱：studio@jiuyi-media.example</li>
+          <li>棚拍预约：工作日 10:00–18:00</li>
+          <li>资源授权：legal@jiuyi-media.example</li>
+          <li><a href="#" data-modal="reportModal">问题反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="jz-footer-bottom">
+      <span>© 2026 九1制品厂 官方网站 · 版权所有 · 持续运营中</span>
+      <span>制作传媒资源平台 · 原创正版高清 · 备案号 九制备 2026-0317 号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="jz-top" id="jzTop" aria-label="回到顶部">↑</button>
+<div class="jz-toast" id="jzToast"></div>
+
+<!-- 弹窗：投稿 -->
+<div class="jz-modal" id="submitModal" role="dialog" aria-modal="true" aria-label="投稿入口">
+  <div class="jz-modal-box">
+    <h3>投稿入口 · 制作传媒资源</h3>
+    <p>填写基本信息后，编辑部会在 3 个工作日内回复。请确保作品为原创且素材授权清晰。</p>
+    <label for="jzSubTitle">作品标题</label>
+    <input id="jzSubTitle" type="text" placeholder="例如：一条片子的 17 道工序">
+    <label for="jzSubType">内容类型</label>
+    <input id="jzSubType" type="text" placeholder="成片 / 幕后 / 教程 / 失败复盘">
+    <label for="jzSubDesc">简短说明</label>
+    <textarea id="jzSubDesc" rows="3" placeholder="讲清楚你的制作背景与可供他人复用的部分"></textarea>
+    <div class="jz-modal-actions">
+      <button class="jz-btn-ghost" data-close>取消</button>
+      <button class="jz-btn-solid" data-submit-form>提交</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：加入社区 -->
+<div class="jz-modal" id="joinModal" role="dialog" aria-modal="true" aria-label="加入社区">
+  <div class="jz-modal-box">
+    <h3>加入九1制品厂社区</h3>
+    <p>加入后可获取资源包更新提醒、参与共创计划与季度评比。我们不会频繁打扰。</p>
+    <label for="jzJoinName">称呼</label>
+    <input id="jzJoinName" type="text" placeholder="你的昵称或工作室名">
+    <label for="jzJoinMail">联系方式</label>
+    <input id="jzJoinMail" type="text" placeholder="邮箱或社交账号">
+    <div class="jz-modal-actions">
+      <button class="jz-btn-ghost" data-close>取消</button>
+      <button class="jz-btn-solid" data-submit-form>确认加入</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：反馈 -->
+<div class="jz-modal" id="reportModal" role="dialog" aria-modal="true" aria-label="反馈建议">
+  <div class="jz-modal-box">
+    <h3>反馈与建议</h3>
+    <p>发现内容错误、素材授权疑问或功能建议，都可以在这里告诉我们。</p>
+    <label for="jzReportText">反馈内容</label>
+    <textarea id="jzReportText" rows="4" placeholder="请描述具体问题与相关页面"></textarea>
+    <div class="jz-modal-actions">
+      <button class="jz-btn-ghost" data-close>取消</button>
+      <button class="jz-btn-solid" data-submit-form>提交反馈</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：分享 -->
+<div class="jz-modal" id="shareModal" role="dialog" aria-modal="true" aria-label="分享">
+  <div class="jz-modal-box">
+    <h3>分享这条内容</h3>
+    <p>选择分享渠道，或复制链接粘贴到任意应用。</p>
+    <div class="jz-share-list">
+      <button data-share="微信">微信</button>
+      <button data-share="微博">微博</button>
+      <button data-share="QQ">QQ</button>
+    </div>
+    <div class="jz-modal-actions">
+      <button class="jz-btn-ghost" data-copy>复制链接</button>
+      <button class="jz-btn-ghost" data-close>关闭</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 工具 ---------- */
+  var toastEl = document.getElementById('jzToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2100);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('jzBurger');
+  var mobileNav = document.getElementById('jzMobileNav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobileNav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      if(!a.hasAttribute('data-modal')){
+        mobileNav.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('jzSearchInput');
+  var searchHint = document.getElementById('jzSearchHint');
+  var searchIndex = [
+    {k:'17 道工序', t:'一条片子的 17 道工序', tag:'制作方法论'},
+    {k:'布光', t:'棚内多机位布光：三灯位方案', tag:'教程'},
+    {k:'声音', t:'采访片的声音设计：三层结构', tag:'音频制作'},
+    {k:'夜戏', t:'城市夜戏实拍攻略：降噪取舍', tag:'攻略'},
+    {k:'新人', t:'新人第一支片：企业短片路线', tag:'成长'},
+    {k:'档案', t:'制品厂档案：老剪辑机一百天', tag:'品牌故事'},
+    {k:'模板', t:'工程目录模板与交付规范', tag:'资源'},
+    {k:'共创', t:'共创计划第 3 季报名规则', tag:'企划'}
+  ];
+  function renderHint(kw){
+    kw = (kw || '').trim();
+    if(!kw){
+      searchHint.classList.remove('on');
+      searchHint.innerHTML = '';
+      return;
+    }
+    var hits = searchIndex.filter(function(it){
+      return it.t.indexOf(kw) > -1 || it.k.indexOf(kw) > -1 || it.tag.indexOf(kw) > -1;
+    }).slice(0,4);
+    if(hits.length){
+      searchHint.innerHTML = '找到 <b>' + hits.length + '</b> 条相关制作传媒资源：<br>' +
+        hits.map(function(h){ return '· ' + h.t + '（' + h.tag + '）'; }).join('<br>');
+    }else{
+      searchHint.innerHTML = '暂无完全匹配「' + escapeHtml(kw) + '」的内容，<br>试试「布光」「声音」「共创」等关键词。';
+    }
+    searchHint.classList.add('on');
+  }
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  var searchTimer = null;
+  searchInput.addEventListener('input', function(){
+    clearTimeout(searchTimer);
+    var v = this.value;
+    searchTimer = setTimeout(function(){ renderHint(v); }, 180);
+  });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+      renderHint(this.value);
+    }
+  });
+  searchInput.addEventListener('blur', function(){
+    setTimeout(function(){ searchHint.classList.remove('on'); }, 220);
+  });
+  searchInput.addEventListener('focus', function(){
+    if(this.value.trim()) renderHint(this.value);
+  });
+
+  /* ---------- 点赞 ---------- */
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var liked = btn.classList.toggle('liked');
+      var b = btn.querySelector('b');
+      if(b){
+        var base = parseInt(b.getAttribute('data-base') || b.textContent, 10) || 0;
+        b.setAttribute('data-base', base);
+        b.textContent = liked ? (base + 1) : base;
+      }
+      toast(liked ? '已点赞，感谢支持' : '已取消点赞');
+    });
+  });
+
+  /* ---------- 收藏 ---------- */
+  document.querySelectorAll('[data-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('saved');
+      btn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      toast(saved ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var currentModal = null;
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    if(currentModal && currentModal !== m) currentModal.classList.remove('on');
+    m.classList.add('on');
+    currentModal = m;
+    document.body.style.overflow = 'hidden';
+    var firstInput = m.querySelector('input, textarea');
+    if(firstInput) setTimeout(function(){ firstInput.focus(); }, 60);
+  }
+  function closeModal(){
+    if(currentModal){
+      currentModal.classList.remove('on');
+      currentModal = null;
+    }
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-modal]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      var id = el.getAttribute('data-modal');
+      if(id) openModal(id);
+    });
+  });
+  document.querySelectorAll('[data-close]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      closeModal();
+    });
+  });
+  document.querySelectorAll('.jz-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m) closeModal();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+  document.querySelectorAll('[data-submit-form]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      closeModal();
+      toast('提交成功，编辑部将尽快与你联系');
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  function copyLink(){
+    var text = '九1制品厂官方网站 · 制作传媒资源平台';
+    var done = function(){ toast('链接已复制到剪贴板'); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done).catch(function(){ fallbackCopy(text, done); });
+    }else{
+      fallbackCopy(text, done);
+    }
+  }
+  function fallbackCopy(text, cb){
+    try{
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      cb();
+    }catch(err){
+      toast('复制失败，请手动选择内容');
+    }
+  }
+  document.querySelectorAll('[data-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      copyLink();
+    });
+  });
+
+  /* ---------- 分享 ---------- */
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var ch = btn.getAttribute('data-share');
+      closeModal();
+      toast('已生成' + ch + '分享卡片，可粘贴发送');
+    });
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('jzTop');
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      if(window.scrollY > 520) topBtn.classList.add('show');
+      else topBtn.classList.remove('show');
+      ticking = false;
+    });
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 锚点平滑滚动（补偿吸顶高度） ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var href = a.getAttribute('href');
+      if(!href || href === '#') return;
+      if(a.hasAttribute('data-modal')) return;
+      var target = document.querySelector(href);
+      if(!target) return;
+      e.preventDefault();
+      var head = document.querySelector('.jz-sticky-head');
+      var offset = head ? head.getBoundingClientRect().height + 14 : 80;
+      var y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({top: Math.max(y,0), behavior:'smooth'});
+    });
+  });
+})();
+</script>
+</body>
+                  </html>
